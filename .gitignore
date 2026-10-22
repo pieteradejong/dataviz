@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# --- added 2026-09-01 (workspace audit): baseline patterns that were missing ---
+.DS_Store
+**/.DS_Store
+
+# Local env files hold secrets too (.env.local, .env.production); .env.example is the shared template
+.env.*
+!.env.example
